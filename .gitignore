@@ -1,2 +1,4 @@
 models/
 .vscode/
+conf.yml
+heart-disease-ml/

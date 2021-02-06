@@ -1,0 +1,7 @@
+model_name: "v2"
+features:
+  - heartRate
+  - glucose
+  - BMI
+  - totChol
+  - cigsPerDay
