@@ -1,7 +1,20 @@
 model_name: "v2"
-features:
+
+numeric_features:
   - heartRate
   - glucose
   - BMI
   - totChol
   - cigsPerDay
+  - age
+  - diaBP
+  - sysBP
+
+categorical_features:
+  - male 
+  - education 
+  - prevalentStroke 
+  - diabetes 
+  - prevalentHyp
+  - currentSmoker
+  - BPMeds

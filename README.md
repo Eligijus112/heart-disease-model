@@ -19,6 +19,10 @@ source heart/bin/activate
 pip install -r requirements.txt
 ```
 
+# Dependant variable 
+
+TenYearCHD - whether or not a person developed Coronary Heart Disease (CHD).
+
 # Feature list for the independant variables 
 
 male 
@@ -51,11 +55,25 @@ heartRate
 
 glucose
 
+# Amount of data 
+
+The data has 4238 observations.
+
 # Running the pipeline 
 
 ## Configuration file 
 
 The configurations should be in **conf.yml** file. 
+
+## Cleaning the data 
+
+The data is cleaned using the command: 
+
+```
+python dataPreproc.py 
+```
+
+The cleaned data is stored in the directory clean-data/ .
 
 ## Creating the model 
 
