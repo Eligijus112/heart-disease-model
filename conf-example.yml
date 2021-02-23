@@ -1,5 +1,9 @@
 model_name: "v2"
 
+kfolds: 10
+
+repeats: 2
+
 numeric_features:
   - heartRate
   - glucose
@@ -18,3 +22,14 @@ categorical_features:
   - prevalentHyp
   - currentSmoker
   - BPMeds
+
+LogisticRegressionHP:
+  
+  max_iter: 1000
+
+  solver: newton-cg
+  
+  C: 
+    - 0.5
+    - 0.6
+    
