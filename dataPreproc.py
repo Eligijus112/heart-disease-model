@@ -11,7 +11,7 @@ import pickle
 import yaml 
 
 # Directory managment
-import os Sa
+import os 
 
 # Regular expressions
 import re
@@ -34,6 +34,9 @@ d[categorical_features] = d[categorical_features].astype(str)
 
 # Subbing the .0 in the categorical values 
 d[categorical_features] = d[categorical_features].apply(lambda x: [re.sub(".0", "", value) for value in x])
+
+# Leaving only the columns from the list 
+d = d[numeric_features + categorical_features + ['TenYearCHD']]
 
 # Creating the dummy frame 
 d = pd.get_dummies(d, drop_first=True)

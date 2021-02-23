@@ -119,6 +119,9 @@ model.fit(X, y)
 # Saving the feature names to model object
 model.feature_names = X.columns.tolist()
 
+# Getting the categorical features
+model.categorical_features = conf.get("categorical_features")
+
 # Getting the model name from the configurations
 model_name = conf.get("model_name", "misc")
 
