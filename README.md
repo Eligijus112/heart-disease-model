@@ -11,6 +11,8 @@ More about the heart disease data can be found via: https://www.kaggle.com/amana
 virtualenv heart
 ```
 
+The bellow command activates the env as well
+
 ```
 source heart/bin/activate
 ```
