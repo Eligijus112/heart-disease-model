@@ -27,35 +27,43 @@ TenYearCHD - whether or not a person developed Coronary Heart Disease (CHD).
 
 # Feature list for the independant variables 
 
-male 
+## Demographic Risks
 
-age 
+gender
 
-education 
+age
 
-currentSmoker 
+education (1: high school, 2: diploma, 3: college, 4: higher than degree)
 
-cigsPerDay 
+## Behavioral Risks
 
-BPMeds
+CurrentSmoker - Current smoker or not
 
-prevalentStroke 
+CigsPerDay - Average number of cigarettes smoked per day
 
-prevalentHyp 
+## Medical experiments
 
-diabetes 
+BPMeds - Patient is under blood pressure medication
 
-totChol 
+PrevalentStroke - Previously had a stroke or not
 
-sysBP
+PrevalentHyp - Prevalent Hypertension or not
 
-diaBP 
+Diabetes - Patient has diabetes or not
 
-BMI 
+TotChol - Total Cholesterol
 
-heartRate 
+Glucose - Glucose level
 
-glucose
+## Physical examination
+
+DiaBP - Diastolic blood pressure
+
+BMI - Body mass index
+
+Heart - Rate Heart Rate
+
+SysBP - Systolic blood pressure
 
 # Amount of data 
 

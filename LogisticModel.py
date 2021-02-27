@@ -119,8 +119,18 @@ model.fit(X, y)
 # Saving the feature names to model object
 model.feature_names = X.columns.tolist()
 
-# Getting the categorical features
+# Creating the coefficient frame to print out 
+coefFrame = pd.DataFrame({
+    'feature': X.columns.tolist(),
+    'coef': model.coef_[0]
+})
+print(coefFrame)
+
+# Saving the categorical features
 model.categorical_features = conf.get("categorical_features")
+
+# Saving the numerical features 
+model.numeric_features = conf.get('numeric_features')
 
 # Getting the model name from the configurations
 model_name = conf.get("model_name", "misc")
